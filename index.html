@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers for Fabiana 🌼</title>
+    <style>
+      /* Dedicatoria */
+      .dedicatoria {
+        position: absolute;
+        bottom: 40px;
+        width: 90%;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #3e2723;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 12px 18px;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        animation: aparecer 2s ease-out forwards;
+        opacity: 0;
+        white-space: pre-line;
+      }
+
+      @keyframes aparecer {
+        to { opacity: 1; }
+      }
+
+      /* Efecto máquina de escribir */
+      .typing {
+        display: inline-block;
+        border-right: 2px solid #3e2723;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: escribir 10s steps(60, end), cursor 0.8s step-end infinite alternate;
+      }
+      @keyframes escribir {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+      @keyframes cursor {
+        50% { border-color: transparent; }
+      }
+    </style>
+</head>
+<body class="container">
+  <div class="night"></div>
+  <div class="flowers">
+    <!-- Aquí van tus flores (código original) -->
+  </div>
+
+  <!-- Dedicatoria -->
+  <div class="dedicatoria">
+    <span class="typing">
+      Fabiana, eres como esta flor amarilla:  
+      radiante, única y llena de luz.  
+      Gracias por iluminar cada instante de mi vida 💛  
+      Hoy te regalo esta flor, pero mi verdadero regalo es mi corazón para ti.
+    </span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
